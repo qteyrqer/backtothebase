@@ -1,0 +1,54 @@
+# backtothebase - English
+backtothebase.command.description=Let whitelisted players ask the bot to return to base and operate a trapdoor
+backtothebase.command.usage=/backtothebase <add|remove|list|account|test|status|cancel|reload>
+
+backtothebase.console.added=Whitelisted %s base %s -> (%s, %s, %s)
+backtothebase.console.updated=Updated %s base %s -> (%s, %s, %s)
+backtothebase.console.removed=Removed %s base %s
+backtothebase.console.removed_all=Removed every base of %s
+backtothebase.console.not_found=No matching whitelist entry
+backtothebase.console.list_header=Whitelist (%s player(s)):
+backtothebase.console.list_base=  - base %s: (%s, %s, %s)
+backtothebase.console.list_entry=Player %s:
+backtothebase.console.list_empty=Whitelist is empty; add one with bttb add <player> <x> <y> <z> [base]
+backtothebase.console.account_set=Bot account set to %s
+backtothebase.console.account_warn=Warning: xinbot is currently logged in as %s
+backtothebase.console.invalid_account=Invalid account name: %s
+backtothebase.console.out_of_bounds=y=%s is outside the world height range (%s ~ %s)
+backtothebase.console.reloaded=Configuration reloaded: %s player(s), %s base(s)
+backtothebase.console.running=Handling return request from %s (base %s, %s s elapsed)
+backtothebase.console.idle=No return request in progress
+backtothebase.console.cancelled=Current return request cancelled
+backtothebase.console.usage_add=Usage: bttb add <player> <x> <y> <z> [base]
+backtothebase.console.usage_remove=Usage: bttb remove <player> [base]
+backtothebase.console.usage_account=Usage: bttb account <bot account>
+backtothebase.console.usage_test=Usage: bttb test <player> [base]
+backtothebase.console.invalid_number=Invalid number: %s
+backtothebase.console.invalid_base=Base id must be a positive integer
+backtothebase.console.unknown_sub=Unknown sub-command: %s
+backtothebase.console.not_ready=Plugin is not initialised yet
+backtothebase.console.help=Sub-commands: add, remove, list, account, test, status, cancel, reload
+backtothebase.console.help_add=  bttb add <player> <x> <y> <z> [base]  add/replace a trapdoor coordinate
+backtothebase.console.help_remove=  bttb remove <player> [base]  remove one base or the whole player
+backtothebase.console.help_list=  bttb list [player]  show the whitelist
+backtothebase.console.help_account=  bttb account <name>  set the bot account
+backtothebase.console.help_test=  bttb test <player> [base]  simulate a request from the console
+backtothebase.console.help_status=  bttb status / cancel / reload  status, cancel, reload
+
+backtothebase.msg.accepted=Return request received, working on it...
+backtothebase.msg.arrived=Arrived near the base, pulling the trapdoor...
+backtothebase.msg.success=Back at the base; trapdoor handled.
+backtothebase.msg.failed=Return failed: %s
+backtothebase.msg.denied=You are not allowed to use this.
+backtothebase.msg.busy=Another return request is running, please wait.
+backtothebase.msg.unknown_base=Base %s is not configured.
+backtothebase.msg.timeout=Return request timed out and was cancelled.
+backtothebase.msg.cancelled=Return request cancelled.
+backtothebase.msg.no_trapdoor=No trapdoor found near the configured position.
+backtothebase.msg.trapdoor_far=The trapdoor is too far away (%.1f blocks).
+backtothebase.msg.no_base_goal=No standable spot around the base trapdoor.
+backtothebase.msg.no_route=No walkable route to the target.
+backtothebase.msg.not_ready=The bot is not ready (not connected to a server).
+backtothebase.msg.nav_lost=The navigation request was superseded.
+backtothebase.msg.movementsync_missing=MovementSync is not loaded; cannot move.
+backtothebase.error.movementsync_missing=MovementSync is missing; backtothebase needs it for pathfinding and movement.

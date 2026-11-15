@@ -1,0 +1,5 @@
+backtothebase:
+  description: "backtothebase.command.description"
+  usage: "backtothebase.command.usage"
+  aliases: ["bttb", "back"]
+  executor: "xin.bbtt.backtothebase.BackCommandExecutor"

@@ -1,0 +1,54 @@
+# backtothebase - Simplified Chinese (default)
+backtothebase.command.description=让白名单玩家请求机器人返回基地并操作活板门
+backtothebase.command.usage=/backtothebase <add|remove|list|account|test|status|cancel|reload>
+
+backtothebase.console.added=已添加白名单：%s 基地 %s -> (%s, %s, %s)
+backtothebase.console.updated=已更新白名单：%s 基地 %s -> (%s, %s, %s)
+backtothebase.console.removed=已移除白名单：%s 基地 %s
+backtothebase.console.removed_all=已移除白名单玩家 %s 的全部基地配置
+backtothebase.console.not_found=没有找到对应的白名单配置
+backtothebase.console.list_header=白名单中共有 %s 个玩家：
+backtothebase.console.list_base=  - 基地 %s：(%s, %s, %s)
+backtothebase.console.list_entry=玩家 %s：
+backtothebase.console.list_empty=白名单为空，使用 bttb add <玩家> <x> <y> <z> [基地编号] 添加
+backtothebase.console.account_set=机器人账号已设置为 %s
+backtothebase.console.account_warn=注意：该账号与 xinbot 当前登录账号 %s 不一致
+backtothebase.console.invalid_account=账号名不合法：%s
+backtothebase.console.out_of_bounds=坐标 y=%s 超出世界高度范围（%s ~ %s）
+backtothebase.console.reloaded=配置已重新加载：%s 个玩家，%s 个基地
+backtothebase.console.running=正在处理 %s 的返回请求（基地 %s，已运行 %s 秒）
+backtothebase.console.idle=当前没有进行中的返回请求
+backtothebase.console.cancelled=已取消当前返回请求
+backtothebase.console.usage_add=用法：bttb add <玩家> <x> <y> <z> [基地编号]
+backtothebase.console.usage_remove=用法：bttb remove <玩家> [基地编号]
+backtothebase.console.usage_account=用法：bttb account <机器人账号>
+backtothebase.console.usage_test=用法：bttb test <玩家> [基地编号]
+backtothebase.console.invalid_number=数字格式错误：%s
+backtothebase.console.invalid_base=基地编号必须是正整数
+backtothebase.console.unknown_sub=未知子命令：%s
+backtothebase.console.not_ready=插件尚未初始化完成
+backtothebase.console.help=可用子命令：add, remove, list, account, test, status, cancel, reload
+backtothebase.console.help_add=  bttb add <玩家> <x> <y> <z> [基地编号]  添加/更新活板门坐标
+backtothebase.console.help_remove=  bttb remove <玩家> [基地编号]  移除一个基地或整个玩家
+backtothebase.console.help_list=  bttb list [玩家]  查看白名单
+backtothebase.console.help_account=  bttb account <机器人账号>  设置机器人账号
+backtothebase.console.help_test=  bttb test <玩家> [基地编号]  在控制台模拟一次返回请求
+backtothebase.console.help_status=  bttb status / cancel / reload  查看状态、取消请求、重载配置
+
+backtothebase.msg.accepted=收到返回请求，处理中...
+backtothebase.msg.arrived=已到达基地附近，正在拉下活板门...
+backtothebase.msg.success=已返回基地并处理活板门。
+backtothebase.msg.failed=返回失败：%s
+backtothebase.msg.denied=你没有返回权限。
+backtothebase.msg.busy=当前正在处理其他返回请求，请稍后再试。
+backtothebase.msg.unknown_base=未配置基地编号 %s。
+backtothebase.msg.timeout=返回请求超时，已取消。
+backtothebase.msg.cancelled=返回请求已被取消。
+backtothebase.msg.no_trapdoor=目标坐标附近没有找到活板门。
+backtothebase.msg.trapdoor_far=活板门距离过远（%.1f 格），无法操作。
+backtothebase.msg.no_base_goal=基地活板门周围没有可站立的位置。
+backtothebase.msg.no_route=找不到通往目标位置的路线。
+backtothebase.msg.not_ready=机器人尚未就绪（未连接服务器）。
+backtothebase.msg.nav_lost=导航请求已失效。
+backtothebase.msg.movementsync_missing=MovementSync 未加载，无法执行移动。
+backtothebase.error.movementsync_missing=未找到 MovementSync 插件；backtothebase 依赖它来处理寻路和移动。

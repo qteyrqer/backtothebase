@@ -1,0 +1,5 @@
+name: backtothebase
+main: xin.bbtt.backtothebase.BackToTheBasePlugin
+version: 1.0.1
+depend: [MovementSync]
+type: PLUGIN

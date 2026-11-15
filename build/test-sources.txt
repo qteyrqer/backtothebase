@@ -1,0 +1,3 @@
+src/test/java/xin/bbtt/backtothebase/CommandSelfTest.java
+src/test/java/xin/bbtt/backtothebase/PluginLoadSelfTest.java
+src/test/java/xin/bbtt/backtothebase/SelfTest.java
