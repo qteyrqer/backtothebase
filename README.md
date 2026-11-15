@@ -1,6 +1,6 @@
 # backtothebase
 
-让机器人「回基地」的 xinbot 插件：白名单玩家在游戏里私聊 `back [基地编号]`，机器人通过
+让机器人「回基地」的[xinbot](https://github.com/huangdihd/xinbot)插件：白名单玩家在游戏里私聊 `back [基地编号]`，机器人通过
 [MovementSync](https://github.com/huangdihd/MovementSync) 走到该玩家配置的基地活板门坐标，并像玩家一样右键活板门（开/关由服务器切换）。
 
 - 依赖：xinbot ≥ 2.4.3、MovementSync ≥ 1.12.0（`plugin.yml` 已声明 `depend: [MovementSync]`）
